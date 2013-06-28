@@ -55,7 +55,11 @@ class acf_field_youtube_video extends acf_field
     {
         require_once __DIR__ . '/src/CodeExtractor.php';
 
-        return CodeExtractor::extract($value);
+        try {
+            return CodeExtractor::extract($value);
+        } catch (\InvalidArgumentException $e) {
+            return '';
+        }
     }
 }
 

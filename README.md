@@ -1,8 +1,3 @@
-acf-youtube-video
-=================
-
-Adds a 'YouTube Video' field type for the Advanced Custom Fields WordPress plugin.
-
 # ACF { YouTube Video Field
 
 Adds a 'YouTube Video' field type for the [Advanced Custom Fields](http://wordpress.org/extend/plugins/advanced-custom-fields/) WordPress plugin.
