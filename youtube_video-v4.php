@@ -5,7 +5,7 @@ class acf_field_youtube_video extends acf_field
     /**
      * __construct
      *
-     * Set name / label needed for actions / filters
+     * Set name / label needed for actions / filters.
      *
      * @since    3.6
      * @date     23/01/13
@@ -21,11 +21,11 @@ class acf_field_youtube_video extends acf_field
     }
 
     /**
-     *  create_field()
+     * create_field
      *
-     *  Create the HTML interface for your field
+     * Create the HTML interface for your field.
      *
-     * @param    $field - an array holding all the field's data
+     * @param array $field An array holding all the field's data
      *
      * @type action
      * @since 3.6
@@ -37,17 +37,17 @@ class acf_field_youtube_video extends acf_field
     }
 
     /**
-     * update_value()
+     * update_value
      *
-     * This filter is appied to the $value before it is updated in the db
+     * This filter is applied to the `$value` before it is updated in the db.
      *
      * @type filter
      * @since 3.6
      * @date 23/01/13
      *
-     * @param $value   - the value which will be saved in the database
-     * @param $post_id - the $post_id of which the value will be saved
-     * @param $field   - the field array holding all the field options
+     * @param string $value   The value which will be saved in the database
+     * @param int    $post_id The $post_id of which the value will be saved
+     * @param array  $field   The field array holding all the field options
      *
      * @return string
      */
