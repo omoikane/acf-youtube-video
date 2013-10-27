@@ -39,7 +39,7 @@ class acf_field_youtube_video_plugin
     function init()
     {
         if (function_exists('register_field')) {
-            register_field('acf_field_youtube_video', dirname(__File__) . '/youtube_video-v3.php');
+            register_field('acf_field_youtube_video', __DIR__ . '/youtube_video-v3.php');
         }
     }
 
@@ -52,7 +52,7 @@ class acf_field_youtube_video_plugin
      */
     function register_fields()
     {
-        include_once('youtube_video-v4.php');
+        include_once __DIR__ . '/youtube_video-v4.php';
     }
 }
 
